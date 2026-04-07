@@ -1,109 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1355713069553409');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1355713069553409&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - WhatsApp Now</title>
-    <style>
-        *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-        body{
-            background: 
-                linear-gradient(rgba(10,10,22,0.8), rgba(10,10,22,0.8)),
-                url('https://wallpapercave.com/wp/wp11306538.jpg') center/cover;
-            color:#fff;
-            min-height:100vh;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            padding:20px;
-        }
-        .container{
-            text-align:center;
-            padding:30px;
-            background:rgba(255,255,255,0.1);
-            border-radius:20px;
-            backdrop-filter:blur(10px);
-            border:1px solid rgba(255,255,255,0.2);
-        }
-        .logo{
-            width:120px;
-            height:120px;
-            border-radius:50%;
-            object-fit:cover;
-            border:3px solid #25D366;
-            margin-bottom:20px;
-            box-shadow:0 0 20px rgba(37,211,102,0.5);
-        }
-        .whatsapp-btn{
-            display:inline-block;
-            background:#25D366;
-            color:#fff;
-            text-decoration:none;
-            font-weight:bold;
-            border-radius:50px;
-            padding:20px 50px;
-            font-size:1.5rem;
-            box-shadow:0 10px 30px rgba(37,211,102,0.5);
-            transition:all 0.3s;
-            border:3px solid #fff;
-            animation:pulse 2s infinite;
-            margin-top:20px;
-        }
-        @keyframes pulse{
-            0%{transform:scale(1)}
-            50%{transform:scale(1.05)}
-            100%{transform:scale(1)}
-        }
-        .whatsapp-btn:hover{
-            transform:scale(1.1);
-            box-shadow:0 15px 40px rgba(37,211,102,0.7);
-        }
-        .title{
-            font-size:2rem;
-            margin-bottom:10px;
-            color:#25D366;
-        }
-        .subtitle{
-            font-size:1.1rem;
-            opacity:0.9;
-            margin-bottom:20px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/690e03121fa5e_6084745465091001146.jpg" alt="Logo" class="logo">
-        <h1 class="title">WhatsApp Now</h1>
-        <p class="subtitle">Get in touch with us instantly</p>
-        <a href="https://wa.me/919760564690" class="whatsapp-btn">📱 WhatsApp Now</a>
-    </div>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fantasy King</title>
 
-    <script>
-        // Preload background image for faster loading
-        document.addEventListener('DOMContentLoaded', function() {
-            const bgImage = new Image();
-            bgImage.src = 'https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/ce/55/97/ce559752-b8ef-d8de-14f8-d4fe1dd13edf/pr_source.png/643x0w.jpg';
-            
-            const logoImage = new Image();
-            logoImage.src = 'https://d1yei2z3i6k35z.cloudfront.net/13184094/690e03121fa5e_6084745465091001146.jpg';
-        });
-    </script>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: url("https://i.pinimg.com/originals/8f/2c/f6/8f2cf634c8627fb6ac8e153e614d9ea0.jpg") no-repeat center center/cover;
+    color: white;
+}
+
+/* overlay */
+.overlay {
+    background: rgba(0,0,0,0.7);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main card */
+.container {
+    text-align: center;
+    padding: 40px 25px;
+    max-width: 400px;
+    width: 90%;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* DP */
+.dp {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 20px;
+}
+
+/* title */
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* subtitle */
+p {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+/* button */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff2c2c;
+    color: white;
+}
+
+/* svg icon */
+.icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* footer */
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+    <div class="container">
+
+        <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/69d4e26f18be88.95046442_signal-2026-04-07-161255.jpeg" class="dp">
+
+        <h1>Fantasy King</h1>
+        <p>Join the premium fantasy WhatsApp group and start winning daily contests</p>
+
+        <a href="https://chat.whatsapp.com/FLiDqjVzFDN7Jl6htyNb3z" class="btn">
+
+            <!-- WhatsApp SVG -->
+            <svg class="icon" viewBox="0 0 32 32">
+                <path d="M16 .396C7.163.396 0 7.559 0 16.396c0 2.887.757 5.706 2.197 8.178L0 32l7.655-2.161a15.93 15.93 0 0 0 8.345 2.29c8.837 0 16-7.163 16-16S24.837.396 16 .396zm0 29.214c-2.58 0-5.107-.675-7.337-1.956l-.526-.31-4.54 1.282 1.21-4.43-.343-.558a13.6 13.6 0 0 1-2.075-7.242c0-7.523 6.12-13.643 13.643-13.643s13.643 6.12 13.643 13.643S23.523 29.61 16 29.61zm7.497-10.31c-.41-.205-2.426-1.196-2.8-1.333-.375-.137-.648-.205-.92.205-.273.41-1.057 1.333-1.296 1.606-.24.273-.478.307-.888.103-.41-.205-1.73-.637-3.296-2.03-1.218-1.086-2.04-2.426-2.278-2.836-.24-.41-.025-.63.18-.835.184-.183.41-.478.615-.717.205-.24.273-.41.41-.683.137-.273.068-.512-.034-.717-.103-.205-.92-2.22-1.262-3.04-.333-.8-.672-.69-.92-.704l-.785-.014c-.273 0-.717.103-1.092.512-.375.41-1.435 1.402-1.435 3.42 0 2.016 1.47 3.964 1.674 4.24.205.273 2.893 4.414 7.01 6.19.98.423 1.743.675 2.338.863.982.312 1.876.268 2.582.162.788-.117 2.426-.992 2.768-1.953.342-.96.342-1.782.24-1.953-.103-.17-.375-.273-.785-.478z"/>
+            </svg>
+
+            Join WhatsApp Group
+        </a>
+
+        <div class="footer">
+            Limited slots available • Instant access
+        </div>
+
+    </div>
+</div>
+
 </body>
 </html>
